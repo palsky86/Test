@@ -1,0 +1,260 @@
+
+/*
+    TABLE OF CONTENT
+        1) GLOBAL
+        2) HEADER
+        3) FOOTER
+        4) MAIN
+==================================*/
+
+/*
+1) GLOBAL
+==================================*/
+
+body{
+	font-family: 'Montserrat', sans-serif;
+}
+ul,ol{list-style: none;}
+
+
+.btn-pink {
+  color: #fff;
+  background-color: #c35ba4;
+  border-color: #c35ba4;
+  font-size: 13px;
+}
+
+.btn-pink:hover {
+  color: #fff;
+  background-color: #c35ba4;
+  border-color: #ba4296;
+}
+
+.btn-pink:focus, .btn-pink.focus {
+  box-shadow: 0 0 0 0.2rem rgba(220, 53, 69, 0.5);
+}
+
+.btn-pink.disabled, .btn-pink:disabled {
+  color: #fff;
+  background-color: #c35ba4;
+  border-color: #c35ba4;
+}
+.btn-pink:not(:disabled):not(.disabled):active, .btn-pink:not(:disabled):not(.disabled).active,
+.show > .btn-pink.dropdown-toggle {
+  color: #fff;
+  background-color: #ba4296;
+  border-color: #b21f2d;
+}
+.btn-pink:not(:disabled):not(.disabled):active:focus, .btn-pink:not(:disabled):not(.disabled).active:focus,
+.show > .btn-pink.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.2rem rgba(220, 53, 69, 0.5);
+}
+
+.btn-transprent{
+    background: transparent;
+    border:1px solid #fff;
+    color:#fff;
+}
+
+.btn-transprent:focus, .btn-transprent.focus {
+  box-shadow: 0 0 0 0.1rem rgba(255, 255, 255, 0.5);
+}
+
+.border-color-bl{
+    border-color:#574f47;
+    color:#574f47;
+    font-size: 18px;
+}
+.border-color-bl:focus, .border-color-bl.focus{
+    box-shadow: 0 0 0 0.1rem rgba(0, 0, 0, 0.5);
+}
+
+.video-playicon{
+    vertical-align: middle;
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-top: 6px solid transparent;
+    border-left: 10px solid #574f47;
+    border-bottom: 6px solid transparent;
+}
+
+
+
+/*
+2) HEADER
+==================================*/
+
+.primary-nav a{
+    font-size: 12px;
+    color:#7d7d7d;
+    display: inline-block;
+    padding: 0 10px;
+}
+.primary-nav a:last-child{
+    padding-right: 0;
+}
+
+.media-head h6{
+    font-size: 14px;
+    color:#c4c4c4;
+}
+.media-head a{
+    font-size: 18px;
+    color:#ee5894;
+}
+
+.memuitem{
+    position: relative;
+}
+.memuitem li a i{
+    display: inline-block;
+    vertical-align: middle;
+    color:#d4d4d4;
+    font-size: 18px;
+}
+.memuitem li a{
+    display: inline-block;
+    color:#111111;
+    font-weight: 300;
+    font-size: 14px;
+    text-transform: capitalize;
+    text-decoration: none;
+}
+
+.memuitem > li.active > a,
+.memuitem > li:hover > a,
+.memuitem > li.active > a i,
+.memuitem > li:hover > a i{
+    color:#c35ba4;
+}
+
+.submenu-box{
+    background:#fff;
+    position: absolute;
+    z-index: 10;
+    left: 0;
+    width: 100%;
+    display: none;
+}
+
+.memuitem > li.active > .submenu-box,
+.memuitem > li:hover > .submenu-box{
+    display: block;
+}
+
+.submenu-item h6{
+    color:#c35ba4;
+    text-transform: uppercase;
+}
+.submenu-item h6,
+.submenu-item{
+     font-size: 14px;
+    font-weight: 400;
+}
+
+.submenu-item h6.color-black{
+    color:#111;
+}
+
+.submenu-list li{
+    margin-bottom:13px;
+    position: relative;
+}
+.submenu-list li a{
+    font-size: 14px;
+    color:#111111;
+}
+.submenu-list li.activeborder:after,
+.submenu-list li:hover:after {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  border-bottom: 1px solid #c35ba4;
+  display: block;
+  bottom:0;
+  left: 0%;
+  width:20px;
+}
+
+.submenu-imgbox{
+    position: relative;
+}
+.imgbox-item{
+    padding-top:30%;
+    position: absolute;
+    left:0;
+    top:0;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    font-size: 18px;
+    color:#fff;
+    text-transform: capitalize;
+    background:rgba(0,0,0,0.4);
+}
+
+/*
+3) FOOTER
+==================================*/
+
+
+
+
+/*
+4) MAIN
+==================================*/
+.banner{
+    position: relative;
+}
+.caption{
+    position: absolute;
+    z-index: 5;
+    left:50%;
+    top:50px;
+    transform: translate(-50%);
+}
+.caption-item{
+    color:#574f47;
+}
+.caption-item h1{
+    font-size: 36px;
+}
+.caption-item ul li{
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+.caption-item ul li i{
+    color:#ee5894;
+    font-size: 12px;
+    margin-right: 6px;
+}
+
+.banner-form{
+    position: absolute;
+    z-index:5;
+    left: 0;
+    bottom: 0;
+    background:rgba(0,0,0,0.5);
+    width: 100%;
+}
+.btn-banner-adjust{margin-top: 28px; color:#ee5894;}
+.banner-form-group .btn,
+.banner-form-group > label,
+.banner-form-group{
+    font-size: 14px;
+    text-transform: capitalize;
+}
+.banner-form-group > label,
+.banner-form-group{
+    color:#fff;
+}
+
+
+
+
+
+
+
+
